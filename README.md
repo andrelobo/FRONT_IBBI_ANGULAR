@@ -1,29 +1,66 @@
-# PrimengLogin
+# Angular Application
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.1.2.
+Este é um projeto Angular criado com o Angular CLI.
 
-## Development server
+---
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Índice
 
-## Code scaffolding
+1. [Pré-requisitos](#pré-requisitos)
+2. [Instalação](#instalação)
+3. [Rodando o Projeto](#rodando-o-projeto)
+4. [Build do Projeto](#build-do-projeto)
+5. [Testes](#testes)
+6. [Contribuição](#contribuição)
+7. [Licença](#licença)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+---
 
-## Build
+## Pré-requisitos
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Certifique-se de ter o Node.js e o Angular CLI instalados na sua máquina.
 
-## Running unit tests
+- Node.js: [Instalação do Node.js](https://nodejs.org/)
+- Angular CLI: Instale globalmente via npm
+  ```bash
+  npm install -g @angular/cli
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Instalação
 
-## Running end-to-end tests
+    Clone o repositório:
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+    bash
 
-## Further help
+git clone https://github.com/seu-usuario/nome-do-repositorio.git
+cd nome-do-repositorio
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
-# Front_IBBI2
-# FRONT_IBBI_ANGULAR
+Instale as dependências:
+
+bash
+
+    npm install
+
+Rodando o Projeto
+
+Para rodar a aplicação localmente, utilize o comando Angular CLI ng serve. Isso irá compilar o projeto e iniciar um servidor de desenvolvimento.
+
+bash
+
+ng serve
+
+Por padrão, a aplicação estará disponível em http://localhost:4200/. Abra seu navegador e navegue para esta URL para visualizar o projeto em execução.
+Build do Projeto
+
+Para gerar uma build do projeto para deploy, utilize o comando ng build. Os arquivos compilados serão armazenados no diretório dist/. Use a flag --prod para uma build de produção.
+
+bash
+
+ng build --prod
+
+
+Contribuição
+
+Sinta-se à vontade para contribuir com melhorias para este projeto. Envie um pull request ou abra uma issue com sugestões.
+Licença
+
+Este projeto está licenciado sob a Licença MIT - veja o arquivo LICENSE para detalhes.
