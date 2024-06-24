@@ -1,0 +1,27 @@
+<div class="p-grid p-dir-col">
+  <div class="p-col">
+    <h2 class="text-center">Criar Nova Categoria</h2>
+  </div>
+  <div class="p-col">
+    <form [formGroup]="categoryForm" (ngSubmit)="onSubmit()" class="p-fluid">
+      <div class="p-field">
+        <label for="name">Nome:</label>
+        <input type="text" id="name" formControlName="name" pInputText placeholder="Digite o nome da categoria">
+        <small *ngIf="categoryForm.get('name')?.touched && categoryForm.get('name')?.invalid" class="p-error">
+          {{ getErrorMessage('name') }}
+        </small>
+      </div>
+      <div class="p-field">
+        <label for="description">Descrição:</label>
+        <textarea id="description" formControlName="description" pInputTextarea placeholder="Digite a descrição da categoria"></textarea>
+        <small *ngIf="categoryForm.get('description')?.touched && categoryForm.get('description')?.invalid" class="p-error">
+          {{ getErrorMessage('description') }}
+        </small>
+      </div>
+      <div class="p-field">
+        <button type="submit" pButton pRipple class="p-button-primary" [disabled]="categoryForm.invalid">Criar Categoria</button>
+      </div>
+      <p *ngIf="error" class="p-error text-center">{{ error }}</p>
+    </form>
+  </div>
+</div>
