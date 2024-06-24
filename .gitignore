@@ -1,2 +1,29 @@
-node_modules
+# Ignore arquivos de configuração específicos do usuário
+.idea/
+.vscode/
 
+# Ignore arquivos de build e dependências
+node_modules/
+/dist/
+*.log
+npm-debug.log.*
+yarn-debug.log.*
+yarn-error.log.*
+package-lock.json
+
+# Ignora arquivos gerados pelo Angular CLI
+.angular/
+/*.js
+/*.js.map
+/*.d.ts
+/*.js.map
+
+.angular/cache/
+# Ignore variáveis de ambiente
+.env
+.env.prod
+.env.stage
+
+# Outros
+.DS_Store
+Thumbs.db
